@@ -3,13 +3,13 @@ class Api::V1::ProjectsController < ApplicationController
   # GET /projects
   def index
     @projects = Project.all
-
-    render json: @projects
+    render json: ProjectSerializer.new(@projects)
   end
 
   # GET /projects/1
   def show
-    render json: @project
+    @project = Project.find(params[:id])
+    render json: ProjectSerializer.new(@project)
   end
 
   # POST /projects
