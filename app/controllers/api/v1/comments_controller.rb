@@ -1,5 +1,5 @@
-class CommentsController < ApplicationController
-  before_action :set_comment, only: [:show, :update, :destroy]
+class Api::V1::CommentsController < ApplicationController
+  before_action :get_project, only: [:index, :create]
 
   # GET /comments
   def index
