@@ -3,8 +3,7 @@ class Api::V1::CommentsController < ApplicationController
 
   # GET /comments
   def index
-    @comments = Comment.all
-
+    @comments = @project.comments
     render json: @comments
   end
 
@@ -15,12 +14,12 @@ class Api::V1::CommentsController < ApplicationController
 
   # POST /comments
   def create
-    @comment = Comment.new(comment_params)
+    @comment = @project.comments.build(comment_params)
 
     if @comment.save
-      render json: @comment, status: :created, location: @comment
+      render json: @comment
     else
-      render json: @comment.errors, status: :unprocessable_entity
+      render json: { message: 'Error: Failed to add comment.'}
     end
   end
 
@@ -40,8 +39,8 @@ class Api::V1::CommentsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_comment
-      @comment = Comment.find(params[:id])
+    def get_project
+      @project ||= Project.find(params[:project_id])
     end
 
     # Only allow a list of trusted parameters through.
