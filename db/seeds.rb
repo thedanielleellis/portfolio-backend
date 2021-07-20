@@ -21,7 +21,6 @@ project_data = [
     description: "This is a test",
     image_url: "test.png",
     site_url: "https://test.com",
-    stacks: ['HTML & CSS'],
   },
   # Project #2
   {
@@ -32,7 +31,6 @@ project_data = [
     site_url: "http://test.com",
     blog_url: "http://dev.to",
     demo_vid: "https://www.youtube.com/",
-    stacks: ['Ruby'],
     comments: {
       author: "John Doe",
       email: "john@gmail.com",
@@ -48,7 +46,6 @@ project_data = [
     github_url: "http://github.com/thedanielleellis",
     blog_url: "http://dev.to/",
     demo_vid: "https://www.youtube.com/",
-    stacks: ['HTML']
   }
 ]
 
