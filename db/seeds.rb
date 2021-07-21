@@ -15,37 +15,30 @@ Comment.destroy_all
 
 
 project_data = [
-  # Project #1
   {
-    name: "Test 1",
-    description: "This is a test",
-    image_url: "test.png",
-    site_url: "https://test.com",
+    name: "Hidden Gems Mentorship",
+    description: "A workplace mentoring application that allows users to choose a mentor specifically for their work department. I utilized RESTful APIs and CRUD methodology to build a single page web
+    application that allows all interactions between the client and the server to be handled with AJAX and use JSON as the communication format. <br>
+    Languages/Frameworks: Ruby on Rails, PostgreSQL, JavaScript, HTML/CSS, Bootstrap, ActiveRecord",
+    image_url: "mentorship.png",
+    github_url: "https://github.com/thedanielleellis/HiddenGemsMentorship",
+    blog_url: "https://dev.to/thedanielleellis/my-first-javascript-rails-project-99h"
   },
-  # Project #2
+
   {
-    name: "Test 2",
-    description: "Test again",
-    image_url: "test.jpg",
-    github_url: "http://github.com/thedanielleellis",
-    site_url: "http://test.com",
+    name: "Virtual Dance Machine",
+    description: "An application that allows virtual dance class registration and tracking. This is a Content Management System that allows tracking features through the
+    backend utilization of Ruby on Rails and self-generated RESTful API’s. A sleek and clean frontend to allow users to access classes. <br>
+    Languages/Framweorks: Ruby on Rails, JavaScript, HTML/CSS",
+    image_url: "dance.png",
+    github_url: "https://github.com/thedanielleellis/Virtual-Dance-Machine",
     blog_url: "http://dev.to",
-    demo_vid: "https://www.youtube.com/",
+    demo_vid: "https://youtu.be/SOhsCeommzc",
     comments: {
       author: "John Doe",
       email: "john@gmail.com",
       content: "Great Project!"
     }
-  },
-
-  # Project 3
-  {
-    name: "Test 3",
-    description: "Test 3 description",
-    image_url: "test3.png",
-    github_url: "http://github.com/thedanielleellis",
-    blog_url: "http://dev.to/",
-    demo_vid: "https://www.youtube.com/",
   }
 ]
 
