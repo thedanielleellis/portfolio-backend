@@ -32,8 +32,7 @@ project_data = [
     Languages/Framweorks: Ruby on Rails, JavaScript, HTML/CSS",
     image_url: "dance.png",
     github_url: "https://github.com/thedanielleellis/Virtual-Dance-Machine",
-    blog_url: "http://dev.to",
-    demo_vid: "https://youtu.be/SOhsCeommzc",
+    blog_url: "https://dev.to/thedanielleellis/my-first-javascript-rails-project-99h",
     comments: {
       author: "John Doe",
       email: "john@gmail.com",
