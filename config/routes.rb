@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: "projects#index"
   namespace :api do
     namespace :v1 do 
       resources :projects, only: [:index, :show] do
