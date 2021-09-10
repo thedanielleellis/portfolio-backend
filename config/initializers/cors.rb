@@ -7,7 +7,7 @@
 
  Rails.application.config.middleware.insert_before 0, Rack::Cors do
    allow do
-     origins 'https://git.heroku.com/danielle-portfolio-backend.git'
+     origins 'https://danielle-ellis-v0-porfolio.netlify.app/', 'https://git.heroku.com/danielle-portfolio-backend.git'
 
      resource '*',
        headers: :any,
